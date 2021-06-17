@@ -37,6 +37,11 @@ main {
   color: #fff;
   place-items: center;
 }
+@media (max-width: 1279px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
 
 .left {
   display: flex;

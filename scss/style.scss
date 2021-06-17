@@ -40,6 +40,10 @@ main {
   background: #121212;
   color: #fff;
   place-items: center;
+
+  @media (max-width: 1279px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .left {
@@ -60,7 +64,6 @@ main {
     &-list {
       display: flex;
       flex-direction: column;
-      // gap: 20px;
 
       a {
         position: relative;
