@@ -10,9 +10,11 @@
 body {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 .noise {
+  display: block;
   z-index: 100;
   position: absolute;
   top: 0;
@@ -22,6 +24,10 @@ body {
   height: 100%;
 
   opacity: .05;
+
+  @media(max-width: 1279px) {
+    display: none;
+  }
 }
 
 main {
@@ -111,8 +117,10 @@ main {
 }
 
 .title {
+  z-index: 1;
   width: -moz-fit-content;
   line-height: 1;
+
 
   h1 {
     font-size: 2.4rem;

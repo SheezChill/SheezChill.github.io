@@ -10,9 +10,11 @@
 body {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 .noise {
+  display: block;
   z-index: 100;
   position: absolute;
   top: 0;
@@ -20,6 +22,11 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.05;
+}
+@media (max-width: 1279px) {
+  .noise {
+    display: none;
+  }
 }
 
 main {
@@ -93,6 +100,7 @@ main {
 }
 
 .title {
+  z-index: 1;
   width: -moz-fit-content;
   line-height: 1;
 }
