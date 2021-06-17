@@ -7,8 +7,12 @@
   padding: 0;
 }
 
-html {
-  background: #121212;
+html::before {
+  content: "";
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
